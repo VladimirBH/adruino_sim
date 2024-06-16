@@ -1,6 +1,11 @@
-import serial.tools.list_ports
+import pyautogui
+import time
 
-ports = serial.tools.list_ports.comports()
+# Эмулируем зажатие клавиши
+pyautogui.keyDown('a')
 
-for port in ports:
-    print(port.device)
+# Удерживаем клавишу зажатой в течение 5 секунд
+time.sleep(5)
+
+# Отпускаем клавишу
+pyautogui.keyUp('a')
