@@ -12,7 +12,6 @@ import json
 
 BAUD_RATE = 9600
 
-
 class JoystickApp(ctk.CTk):
     def __init__(self):
         super().__init__()
